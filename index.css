@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #92D050;
+    --secondary-color: #4472C4;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    height: 120px;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 35px;
+    line-height: 120px;
+}
+
+.header p {
+    margin: 0;
+}
+
+
+.nav-bar {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+
+}
+
+.nav-bar-buttons {
+    flex-grow: 1;
+    text-align: center;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.nav-bar-buttons a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-bar-buttons a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-bar-buttons + .nav-bar-buttons {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+.spacer {
+    width: 100%;
+}
+
+/*.spacer {*/
+/*    width: 80%;*/
+/*    height: 70%;*/
+/*    background-color: white;*/
+/*    overflow: hidden;*/
+
+/*}*/
+
+/*.nav-bar-buttons a{*/
+/*    line-height: 20px;*/
+/*    margin: 0;*/
+/*    padding: 4px 0 12px 0;*/
+/*}*/
+
+.content-wrapper {
+    height: calc(100% - 166.7px - 2px);
+}
+
+.content {
+    width: calc(100% - 24px);
+    margin: 20px auto 0 auto;
+    float: left;
+
+}
+
+.content-header {
+    text-align: center;
+    font-size: 18px;
+}
+
+.content-description {
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.border-side {
+    float: left;
+    width: 12px;
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+.border-bottom {
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 12px;
+}
+
