@@ -56,31 +56,13 @@ body {
 }
 
 .nav-bar-buttons a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
-.nav-bar-buttons + .nav-bar-buttons {
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-
-}
 
 .spacer {
     width: 100%;
 }
-
-/*.spacer {*/
-/*    width: 80%;*/
-/*    height: 70%;*/
-/*    background-color: white;*/
-/*    overflow: hidden;*/
-
-/*}*/
-
-/*.nav-bar-buttons a{*/
-/*    line-height: 20px;*/
-/*    margin: 0;*/
-/*    padding: 4px 0 12px 0;*/
-/*}*/
 
 .content-wrapper {
     height: calc(100% - 166.7px - 2px);
