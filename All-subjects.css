@@ -84,7 +84,7 @@ body {
 
 .content-text-center {
     text-align: center;
-    text-justify: inter-world;
+    text-justify: inter-word;
 }
 .active {
     background-color: rgba(0, 0, 0, 0.05);

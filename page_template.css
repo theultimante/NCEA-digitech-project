@@ -62,7 +62,7 @@ body {
 }
 
 .content {
-    float: left;
+    float: right;
     width: calc(100% - 12px - 200px);
 
 }
@@ -85,3 +85,7 @@ body {
 .active {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+
+
+

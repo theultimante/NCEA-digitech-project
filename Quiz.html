@@ -6,9 +6,12 @@
 
     <link rel="stylesheet" href="page_template.css">
     <link rel="stylesheet" href="global.css">
+
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
 <div class="wrapper">
+
     <div class="nav-bar">
         <div class="header">
             NCEA
@@ -40,7 +43,6 @@
             </a>
         </div>
     </div>
-
     <div class="content">
         <div class="content-header">
             <p class="header-text" id="content-header-span">
@@ -61,11 +63,49 @@
             </p>
 
         </div>
+        <div class="quiz">
+            <div class="quiz-question">
+            </div>
+        </div>
+        <br>
+        <button id="finish-quiz-button">
+            Finish Quiz
+        </button>
+        <br>
+        <br>
+        <span style="color: red; margin-left: 5%; display: none" id="quizError">
+            You Must Finish The Quiz!
+        </span>
+    </div>
+    <div class="popup-background" style="display: none">
+        <div class="popup-window">
+
+            <div class="popup-header">
+                <span>
+                    Results
+                </span>
+
+                <span id="close-button" class="close-button">
+                    X
+                </span>
+            </div>
+            <br>
+            <div class="popup-content">
+                <p class="popup-result">
+                    You got a score of 120!
+                </p>
+                <p class="popup-advice">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
-</div>
-
-
+<script src="quiz.js"></script>
 </body>
 </html>
