@@ -18,7 +18,7 @@ let questions = [
 
     },
     {
-        qu: "Question 5: Do you feel as if you are prepared for your end of year exams?",
+        qu: "Question 5: Do you feel as if you are not prepared for your end of year exams?",
         an_list: ["A yes", "B no"]
     }
 ]
@@ -94,40 +94,47 @@ function hasUserFinishedQuiz() {
     return true;
 }
 
+// Hides the span tag that shows the user they didn't complete the quiz
 function hideQuizError() {
     let quizErrorText = document.getElementById("quizError")
     quizErrorText.style.display = "none"
 }
 
+// Changes the advice based on the score the user got
 function changeAdvice(score) {
     let text;
-    if (score < 5) {
+    if (score < 8) {
         text = "You really need to put in some extra work. It's for your own benefit, as there is certainly a risk of you failing this year if things continue as-is. Possibly look into tutoring. "
-    } else if (score < 8) {
-        text = "You certainly are looking ok, but there is definitely room for improvement. Put in an extra hour or two a week and you should be looking on-track. "
     } else if (score < 11) {
+        text = "You certainly are looking ok, but there is definitely room for improvement. Put in an extra hour or two a week and you should be looking on-track. "
+    } else if (score < 13) {
         text = "You're on track! Keep it up, and if you're aiming for Excellence, possibly look into just doing that tiny extra bit more! "
     } else {
         text = "You're doing amazing. Keep up the great work. You're well on track to get 100% for the year. "
     }
 
+    // Changes the text of the span
     document.getElementsByClassName("popup-advice")[0].textContent = text
-
-
 }
 
+// This happens when the finish quiz button is clicked
 function finishQuiz() {
+    // Checks if the user has checked all of the radio boxes
     if (hasUserFinishedQuiz()) {
+        // Shows the popup window
         showPopUpWindow()
     } else {
+        // Tells the user they need to complete the quiz first
         let quizErrorText = document.getElementById("quizError")
 
         quizErrorText.style.display = ""
 
+        // Hides the message from the user
         setTimeout(hideQuizError, 1500);
     }
 }
 
+// Checks if the question has been answered
 function isQuestionBeenAnswered(radioButtons) {
     for (let radioButton of radioButtons) {
         if (radioButton.checked) {
@@ -137,6 +144,7 @@ function isQuestionBeenAnswered(radioButtons) {
     return false
 }
 
+// Displays the popup window
 function showPopUpWindow() {
     let score = calculateScore()
     console.log(score)
@@ -151,7 +159,6 @@ function showPopUpWindow() {
 }
 
 function closePopUpWindow() {
-    console.log("awd")
     document.getElementsByClassName("popup-background")[0].style.display = "none";
 }
 
@@ -169,6 +176,7 @@ function calculateScore() {
 
 function getCheckedRadioButton(radioButtons) {
     let i;
+    // Gets the radio button that was checked
     for (i = 0; i < radioButtons.length; i++) {
         if (radioButtons[i].checked) {
             return i

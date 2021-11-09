@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Quiz - what do you need to do to improve?</title>
-
+    <!-- Stylesheets used -->
     <link rel="stylesheet" href="page_template.css">
     <link rel="stylesheet" href="global.css">
 
@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="wrapper">
-
+    <!-- Creates a nav bar-->
     <div class="nav-bar">
         <div class="header">
             NCEA
@@ -43,6 +43,7 @@
             </a>
         </div>
     </div>
+    <!-- This is where all the content for the page is going to be placed-->
     <div class="content">
         <div class="content-header">
             <p class="header-text" id="content-header-span">
@@ -77,6 +78,7 @@
             You Must Finish The Quiz!
         </span>
     </div>
+    <!-- This popup is for the quiz, it will be displayed then the user has completed the quiz-->
     <div class="popup-background" style="display: none">
         <div class="popup-window">
 
@@ -91,9 +93,11 @@
             </div>
             <br>
             <div class="popup-content">
+                <!--Shows the user their result-->
                 <p class="popup-result">
                     You got a score of 120!
                 </p>
+                <!-- Tells the user what they should work on-->
                 <p class="popup-advice">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -106,6 +110,8 @@
     </div>
 </div>
 
+<!-- Links this page to the javascript quiz file-->
+<!-- This will give the page all of its functionality-->
 <script src="quiz.js"></script>
 </body>
 </html>

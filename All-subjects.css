@@ -4,6 +4,7 @@
 
 }
 
+/* Sets height, width and font for the window*/
 body {
     min-height: 100%;
     min-width: 100%;
@@ -11,18 +12,21 @@ body {
     font-family: 'Source Code Pro', sans-serif;
 }
 
+/* Sets width and height for the window*/
 .wrapper {
     height: 100vh;
     width: 100%;
 }
 
 
+/* Sets the headers size*/
 .header {
     padding: 20px;
     font-size: 25px;
     border-bottom: 1px solid black;
 }
 
+/* Sets the nav bar size*/
 .nav-bar {
     width: 200px;
     height: 100%;
@@ -35,7 +39,9 @@ body {
 
 }
 
+
 .nav-bar-buttons a {
+    /* Makes it so the entire button directs you to the correct page*/
     display: block;
     text-decoration: none;
     color: #000000;
@@ -47,19 +53,6 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-
-.border-side {
-    float: left;
-    width: 12px;
-    background-color: var(--primary-color);
-    height: 100%;
-}
-
-.border-top {
-    width: 100%;
-    background-color: var(--primary-color);
-    height: 12px;
-}
 
 .content {
     float: left;
@@ -73,16 +66,19 @@ body {
 }
 
 .main-content {
+    /* Centers */
     width: 90%;
     margin: auto;
 }
 
 .content-text {
+    /* Centers */
     text-align: justify;
     text-justify: inter-word;
 }
 
 .content-text-center {
+    /* Centers */
     text-align: center;
     text-justify: inter-word;
 }

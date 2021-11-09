@@ -1,10 +1,13 @@
 .nav-bar {
+    /* Making the position fixed fixes the bug of the nav bar going out of the window*/
     position: fixed;
     left: 0;
     top: 0
 }
 
+
 .content {
+    /* Aligns the content next to the nav bar by putting a margin next to it*/
     margin-left: 200px;
     overflow: auto;
 }
@@ -16,6 +19,7 @@
 }
 
 body {
+    /* Sets up initial fonts and size for the window*/
     min-height: 100%;
     min-width: 100%;
     margin: 0;
@@ -29,6 +33,7 @@ body {
 
 
 .header {
+    /* Gives it padding to make the header look bigger*/
     padding: 20px;
     font-size: 25px;
     border-bottom: 1px solid black;
@@ -55,30 +60,20 @@ body {
 
 
 .nav-bar-buttons a:hover {
+    /* Makes the button darker when hovered on*/
     background-color: rgba(0, 0, 0, 0.05);
 }
 
 
-.border-side {
-    float: left;
-    width: 12px;
-    background-color: var(--primary-color);
-    height: 100%;
-}
-
-.border-top {
-    width: 100%;
-    background-color: var(--primary-color);
-    height: 12px;
-}
-
 .content {
+
     float: right;
     width: calc(100% - 200px);
 
 }
 
 .content-header {
+    /* Aligns text in the center*/
     text-align: center;
     font-size: 25px;
 }
@@ -89,11 +84,13 @@ body {
 }
 
 .content-text {
+    /* Aligns text in the center*/
     text-align: justify;
     text-justify: inter-word;
 }
 
 .content-text-center {
+    /* Aligns text in the center*/
     text-align: center;
     text-justify: inter-word;
 }

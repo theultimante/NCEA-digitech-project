@@ -1,3 +1,4 @@
+/* Puts the quiz in the middle*/
 .quiz{
     padding-top: 25px;
     width: 90%;
@@ -5,6 +6,7 @@
 
 }
 
+/* Removes the bullet points from the list*/
 .quiz ul{
     list-style: none;
 }
@@ -17,14 +19,17 @@
 
 }
 
+/* Gives it spacing at the bottom. The website looks too squashed if this isn't here*/
 .content{
     margin-bottom: 80px;
 }
 
 
-
 .popup-background{
+    /* Makes the background black */
     background-color: rgba(0, 0, 0, 0.3);
+
+    /* Puts it at the top of the window*/
     z-index: 1;
     overflow: auto;
     position: fixed;
@@ -44,6 +49,7 @@
     border-radius: 10px;
     height: 50%;
 
+    /* Center the elements */
     display: flex;
     justify-content: center;
     align-content: center;
@@ -53,25 +59,29 @@
 
 }
 
-
+/* Sets the size and text alignment for the popup window*/
 .popup-content{
     text-align: center;
     flex-grow: 1;
     width: 80%;
     margin: auto;
 }
+
 .popup-header{
     width: 80%;
     margin: 20px auto 0 auto;
 }
 
+/* The padding gives the span some more clickable space to close the popup window */
 .popup-header span{
     padding: 5px;
 }
+
+/* Makes it display on the right instead of the eft*/
 .close-button{
     float: right
 }
-
+/* Changes the background colour of the close button and the cursor when hovered on*/
 .close-button:hover{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.3);
